@@ -1,0 +1,26 @@
+app.js.
+function actualizarFechaHora() {
+
+    const ahora = new Date();
+
+    const opcionesFecha = {
+        weekday: 'long',
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric'
+    };
+
+    const fecha = ahora.toLocaleDateString('es-MX', opcionesFecha);
+
+    const hora = ahora.toLocaleTimeString('es-MX', {
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+
+    document.getElementById("fechaHora").innerHTML =
+        "📅 " + fecha + "<br>🕒 " + hora;
+}
+
+actualizarFechaHora();
+
+setInterval(actualizarFechaHora, 1000);
