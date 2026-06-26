@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Entrada</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>Registro de Entrada</h1>
+
+<label>Tipo de acceso</label>
+
+<select id="tipo">
+<option>Paciente</option>
+<option>Visitante</option>
+<option>Representante Médico</option>
+<option>Proveedor</option>
+</select>
+
+<br><br>
+
+<label>Piso</label>
+
+<select id="piso">
+<option value="">Seleccione...</option>
+<option value="1">Piso 1</option>
+<option value="2">Piso 2</option>
+<option value="3">Piso 3</option>
+<option value="4">Piso 4</option>
+</select>
+
+<br><br>
+
+<label>Consultorio</label>
+
+<select id="consultorio">
+<option>Seleccione un piso</option>
+</select>
+
+<br><br>
+
+<label>Nombre completo</label>
+
+<input
+type="text"
+id="nombre"
+placeholder="Escriba el nombre completo">
+
+<br><br>
+
+<button class="entrada">
+📷 TOMAR FOTOGRAFÍA
+</button>
+
+<button class="entrada">
+✅ FINALIZAR REGISTRO
+</button>
+
+<br><br>
+
+<button onclick="history.back()">
+⬅ Regresar
+</button>
+
+</div>
+
+<script src="../js/entrada.js"></script>
+
+</body>
+</html>
